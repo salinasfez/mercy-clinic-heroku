@@ -7,6 +7,7 @@ const AppointmentSchema = new mongoose.Schema({
   reasonForVisit: String,
   doctor: String,
   time: String,
+  date: String,
   newPatient: Boolean,
   createdAt: { type: Date, default: Date.now }
 });
