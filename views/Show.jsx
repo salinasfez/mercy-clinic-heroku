@@ -10,7 +10,8 @@ class Show extends React.Component {
                 <label>Date: &nbsp;&nbsp;</label>{this.props.date}&nbsp;&nbsp;<label>Time: &nbsp;&nbsp;</label>{this.props.time}<br></br><br></br>
                 <label>Doctor: &nbsp;&nbsp;</label>{this.props.doctor}<br></br><br></br>
                 <label>Reason For Visit: &nbsp;&nbsp;</label>{this.props.reasonForVisit}<br></br><br></br>
-                { this.props.newPatient ? ` New Patient` : ` Established Patient` }
+                { this.props.newPatient ? ` New Patient` : ` Established Patient` }<br></br><br></br>
+                <button><a href="/appointments/edit">Reschedule Appointment</a></button>
             </AppLayout>
         )
     }

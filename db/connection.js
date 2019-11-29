@@ -4,7 +4,7 @@ const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/restau
 mongoose.connect(MONGODB_URI, {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
-	useFindAndModify: true
+	useFindAndModify: false
 });
 mongoose.Promise = Promise;
 

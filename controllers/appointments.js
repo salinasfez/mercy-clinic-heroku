@@ -27,7 +27,7 @@ router.post('/', (req, res) => {
 //edit route ////////HAD TO MOVE THIS ROUTE BEFORE THE SHOW ROUTE...CAN'T BE FORGETTING THOSE SIMPLE THINGS!!!/////
 router.get('/edit', (req, res) => {
     // res.send('testing edit route');
-    Appointment.findOneAndUpdate(req.params.id).then(appointment => {
+    Appointment.findOneAndUpdate( req.params.id).then(appointment => {
         res.render('Edit', appointment)
     })
 })
@@ -42,9 +42,9 @@ router.get('/:id', (req, res) => {
     Appointment.findOneAndUpdate(
       { _id: req.params.id },
       req.body
-    ).then(appointment => {
-      appointment.redirect(`/appointments/${appointment.id}`);
-    });
+    ).then( 
+      res.redirect(`/appointments`)
+    );
   });
  
         

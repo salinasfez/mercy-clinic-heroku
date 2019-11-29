@@ -24,8 +24,6 @@ class AppLayout extends React.Component {
                   <ul className="flex-container">
                     <li className="flex-item"><a href="/appointments">Home</a></li>
                     <li className="flex-item"><a href="/appointments/new">Book Appointment</a></li>
-                    <li className="flex-item"><a href="/appointments/edit">Reschedule Appointment</a></li>
-                    <li className="flex-item"><a href="/">Cancel Appointment</a></li>
                   </ul>
                 </nav>
               </header>

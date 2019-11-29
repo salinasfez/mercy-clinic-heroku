@@ -7,7 +7,7 @@ class Edit extends React.Component{
             <AppLayout title="Reschedule Your Appointment">
 
             <form action={`/appointments/${this.props._id}?_method=put`} method="POST">
-                <label>First Name   </label><input type="text" name="firstName" value={`${this.props.firstName}`}></input> &nbsp;&nbsp;&nbsp;&nbsp;
+                <label>First Name   </label><input type="text" name="firstName"></input> &nbsp;&nbsp;&nbsp;&nbsp;
                 <label>Last Name   </label><input type="text" name="lastName"></input><br></br><br></br>
                 <label>Reason For Visit  </label><br></br><textarea rows="4" col="50" type="text" name="reasonForVisit"></textarea><br></br><br></br>
                 <label>Preferred Doctor   </label><select type="text" name="doctor">
