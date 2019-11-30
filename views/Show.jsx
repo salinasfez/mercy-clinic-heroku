@@ -11,7 +11,10 @@ class Show extends React.Component {
                 <label>Doctor: &nbsp;&nbsp;</label>{this.props.doctor}<br></br><br></br>
                 <label>Reason For Visit: &nbsp;&nbsp;</label>{this.props.reasonForVisit}<br></br><br></br>
                 { this.props.newPatient ? ` New Patient` : ` Established Patient` }<br></br><br></br>
-                <button><a href="/appointments/edit">Reschedule Appointment</a></button>
+                <button><a href={`/appointments/edit/${this.props._id}`}>Reschedule Appointment</a></button><br></br><br></br>
+                <form action={`/appointments/${this.props._id}?_method=delete`} method="post">
+                        <input type="submit" value="Delete Appointment" />
+                </form>
             </AppLayout>
         )
     }

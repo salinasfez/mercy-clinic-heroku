@@ -8,14 +8,8 @@ class AppLayout extends React.Component {
               <meta charSet="UTF-8" />
               <meta name="viewport" content="width=device-width" />
               <title>{this.props.title}</title>
-             <script
-                src="https://code.jquery.com/jquery-3.4.1.min.js"
-                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-                crossOrigin="anonymous">
-
-              </script>
-              <script src="../app.js"></script>
-             <link rel="stylesheet" href="../main.css" type="text/css"/>
+              
+             
             </head>
             <body>
               <header>

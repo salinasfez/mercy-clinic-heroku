@@ -13,6 +13,14 @@ router.get('/', (req, res) => {
 router.get('/new', (req, res) => {
     res.render('New');
 })
+
+//Show Route
+router.get('/:id', (req, res) => {
+    Appointment.findOne({ _id: req.params.id }).then(appointment => {
+      res.render('Show', appointment);
+    });
+  });
+
 //posting my appointment to the index route/page
 router.post('/', (req, res) => {
     if (req.body.newPatient === 'on') {
@@ -24,27 +32,29 @@ router.post('/', (req, res) => {
         res.redirect('/appointments');
     })
 })
-//edit route ////////HAD TO MOVE THIS ROUTE BEFORE THE SHOW ROUTE...CAN'T BE FORGETTING THOSE SIMPLE THINGS!!!/////
-router.get('/edit', (req, res) => {
-    // res.send('testing edit route');
-    Appointment.findOneAndUpdate( req.params.id).then(appointment => {
-        res.render('Edit', appointment)
-    })
-})
-//Show Route
-router.get('/:id', (req, res) => {
+  //edit route
+  router.get('/edit/:id', (req, res) => {
     Appointment.findOne({ _id: req.params.id }).then(appointment => {
-      res.render('Show', appointment);
+      res.render('Edit', appointment);
     });
   });
+
+
+
 //   edit put route
   router.put('/:id', (req, res) => {
     Appointment.findOneAndUpdate(
       { _id: req.params.id },
       req.body
-    ).then( 
-      res.redirect(`/appointments`)
-    );
+    ).then(appointment => {
+        res.redirect(`/appointments/${appointment.id}`);
+      });
+  });
+  //the delete route
+  router.delete('/:id', (req, res) => {
+    Appointment.findOneAndRemove({ _id: req.params.id }).then(() => {
+      res.redirect('/appointments');
+    });
   });
  
         
