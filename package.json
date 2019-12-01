@@ -2,7 +2,7 @@
   "name": "mercy_clinic",
   "version": "1.0.0",
   "engines": {
-    "node":"12.7.0"
+    "node": "12.7.0"
   },
   "description": "![](/ga_cog.png)",
   "main": "index.js",
@@ -16,6 +16,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-react-views": "^0.11.0",
+    "express-static": "^1.2.6",
     "method-override": "^3.0.0",
     "mongoose": "^5.7.12",
     "react": "^16.12.0",

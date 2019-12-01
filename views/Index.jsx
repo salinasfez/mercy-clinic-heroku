@@ -12,10 +12,10 @@ class Index extends React.Component{
                     this.props.appointments.map((appointment, i) => {
                         return (
                            <li id={i} key={`li${i}`}>
-                        <label>Patient's Full Name:  &nbsp;&nbsp;  </label><a href={`/appointments/${ appointment._id }`}>{ appointment.firstName } {appointment.lastName }</a>
+                        <label className="lead">Patient's Full Name:  &nbsp;&nbsp;  </label><a href={`/appointments/${ appointment._id }`}>{ appointment.firstName } {appointment.lastName }</a>
                         <br></br><br></br>
-                        <label>Time: &nbsp;&nbsp;   </label>{appointment.time}<br></br><br></br>
-                        <label>Status: &nbsp;&nbsp;</label>{ appointment.newPatient ? ` New Patient` : ` Established Patient` }
+                        <label className="lead">Time: &nbsp;&nbsp;   </label>{appointment.time}<br></br><br></br>
+                        <label className="lead">Status: &nbsp;&nbsp;</label>{ appointment.newPatient ? ` New Patient` : ` Established Patient` }
                         <br></br><br></br><br></br><br></br>
                         </li>
                         )

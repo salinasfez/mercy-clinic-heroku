@@ -7,9 +7,9 @@ class New extends React.Component{
             <AppLayout title="Book Your Appointment">
 
             <form action={`/appointments`} method="POST">
-                <label>First Name   </label><input type="text" name="firstName"></input> &nbsp;&nbsp;&nbsp;&nbsp;
-                <label>Last Name   </label><input type="text" name="lastName"></input><br></br><br></br>
-                <label>Reason For Visit  </label><br></br><textarea rows="4" col="50" type="text" name="reasonForVisit"></textarea><br></br><br></br>
+                <label>First Name   </label><input className="form-control" type="text" name="firstName"></input> &nbsp;&nbsp;&nbsp;&nbsp;
+                <label>Last Name   </label><input className="form-control" type="text" name="lastName"></input><br></br><br></br>
+                <label>Reason For Visit  </label><br></br><textarea className="form-control" rows="4" col="50" type="text" name="reasonForVisit"></textarea><br></br><br></br>
                 <label>Preferred Doctor   </label><select type="text" name="doctor">
                                                         <option value="Dr. Knows A Bit" name="doctor">Dr. Knows A Bit</option>
                                                         <option value="Dr. Knows A Lot" name="doctor">Dr. Knows A Lot</option>
@@ -21,7 +21,7 @@ class New extends React.Component{
                 <label>Are You A New Patient?   </label><input className="new-patient" type="checkbox" name="newPatient"></input>
                 <br></br>
                 <br></br>
-             <input type="submit" value="Book Now"></input>   
+             <input className="btn btn-success" type="submit" value="Book Now"></input>   
             </form>    
 
 
