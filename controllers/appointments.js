@@ -37,6 +37,7 @@ router.post('/', (req, res) => {
     Appointment.findOne({ _id: req.params.id }).then(appointment => {
       res.render('Edit', appointment);
     });
+    
   });
 
 

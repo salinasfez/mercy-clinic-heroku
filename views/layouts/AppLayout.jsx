@@ -13,9 +13,9 @@ class AppLayout extends React.Component {
                   src="https://code.jquery.com/jquery-3.4.1.min.js"
                   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
                   crossOrigin="anonymous"></script>
-             <link rel="stylesheet" type="text/css" href="../bootstrap.min.css"></link>
-             <link rel="stylesheet" type="text/css" href="../main.css"></link>
-             <script src="../app.js"></script>
+             <link rel="stylesheet" type="text/css" href="/bootstrap.min.css"></link>
+             <link rel="stylesheet" type="text/css" href="/main.css"></link>
+             <script src="/app.js"></script>
             </head>
             <body>
               <header>
