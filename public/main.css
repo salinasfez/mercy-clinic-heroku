@@ -1,6 +1,8 @@
 body {
     margin: 0 auto;
     text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    
 }
 
 
@@ -18,8 +20,12 @@ li {
 }
 .title {
     text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    text-shadow: 2px 6px #262B2F;
+    color: white;
     
-    color: #262B2F;
+    
+    
 }
 .jumbotron {
     background-image: url("img_1.jpg");

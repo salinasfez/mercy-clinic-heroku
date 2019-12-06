@@ -15,6 +15,7 @@ class AppLayout extends React.Component {
                   crossOrigin="anonymous"></script>
              <link rel="stylesheet" type="text/css" href="/bootstrap.min.css"></link>
              <link rel="stylesheet" type="text/css" href="/main.css"></link>
+             <link href="https://fonts.googleapis.com/css?family=Rajdhani&display=swap" rel="stylesheet"></link>
              <script src="/app.js"></script>
             </head>
             <body>
